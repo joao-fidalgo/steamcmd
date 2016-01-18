@@ -10,5 +10,6 @@ RUN apt-get update && \
 RUN mkdir -p /opt/steamcmd && \
     curl -s http://media.steampowered.com/installer/steamcmd_linux.tar.gz | tar -vxz -C /opt/steamcmd
 
-ENTRYPOINT ["/opt/steamcmd/steamcmd.sh"]
 CMD ["run"]
+ENTRYPOINT ["/opt/steamcmd/steamcmd.sh"]
+
